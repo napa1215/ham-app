@@ -8,7 +8,7 @@
 | nickname           | string | null: false, unique: true |
 | hamster_name       | string | null: false               |
 | profile            | text   | null: false               |
-  
+    
 - has_many :diarys
 - has_many :comments
 
