@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>with My HAMSTER</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1 class="title">with My HAMSTER -ハムスターと暮らそう-</h1>
+      </div>
+      <div class="navbar">  
+        <ul class="nav-lists">
+          <li>ハムスターについて</li>
+          <li>育成日記</li>
+          <li>グッズ</li>
+          <li>ログイン</li>
+          <li>新規登録</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contents">
+      <div class="first-view">
+        <%= image_tag 'IMG_0013.JPG', class: 'top-image' %>
+      </div>
+      <div class="upper-content">
+        <h2 class="heading-name">ハムスターと長く楽しく暮らそう</h2>
+        <ul class="messages">
+          <li class="message">
+            ハムスターは子どもから大人まで幅広い世代に、非常に人気のある動物です。ハムスターは知ってるけど、実際どうやって飼育すればいいのか？などインターネットで検索すれば、たくさんの情報がありますが、このアプリを通じて改めてハムスターについて知って欲しいことと、できるだけ多くのハムスターが、快適な環境で幸せに生活でき、飼い主さんとのきずなを深めるために使っていただけると嬉しいです。</div>
+          </li>
+        </ul>
+      </div>
+      <div class="middle-content">
+        <h2 class="heading-name-two">ハムスターのミリョク</h2>
+        <ul class="ham-charm-list">
+          <li>
+            <%= image_tag "IMG_1358.jpg", class: "ham-image" %>
+            <h3 class="ham-charm">表情が豊かです。</h3>
+            <p class="ham-charm">
+            小さな体のハムスターですが、<br>
+            表情が豊かで、目、鼻、口、耳で<br>
+            いろいろなことを表現しています。
+            </p>
+          </li>
+          <li>
+            <%= image_tag "IMG_1012.jpg", class: "ham-image" %>
+            <h3 class="ham-charm">どこにでも入ります。</h3>
+            <p class="ham-charm">
+            狭い場所が大好きで、どこにでも<br>
+            入ってしまいます。時には驚く<br>
+            ような場所から出てくることも。
+            </p>
+          </li>
+          <li>
+            <%= image_tag 'IMG_1211.jpg', class: 'ham-image' %>
+            <h3 class="ham-charm">食いしん坊です。</h3>
+            <p class="ham-charm">
+            食にはとても貧欲です！<br>
+            たくさん動くから、エネルギーが<br>
+            たくさん必要なんです。
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-content">
+      <ul class="ham-charm-list">
+        <li>
+            <%= image_tag 'IMG_0542.jpg', class: 'ham-image' %>
+            <h3 class="ham-charm">よく寝ます。</h3>
+            <p class="ham-charm">
+            とにかくよく寝ます。ゲージを掃除<br>
+            する時などで、狭い部屋に移動しても<br>
+            すぐ寝ます。寝る子は育つんです。
+            </p>
+          </li>
+          <li>
+            <%= image_tag "IMG_0394.jpg", class: "ham-image" %>
+            <h3 class="ham-charm">飼い主さんになつきます。</h3>
+            <p class="ham-charm">
+            慣れてくれば、飼い主さんの<br>
+            手や体に乗ってきます。安心して<br>
+            しばらく動かなくなることも。
+            </p>
+          </li>
+          <li>
+            <%= image_tag "IMG_0598.jpg", class: "ham-image" %>
+            <h3 class="ham-charm">後ろ姿もキュートです。</h3>
+            <p class="ham-charm">
+            かわいいのは顔だけではありません。<br>
+            ぼてっとした丸い背中やお尻が<br>
+            とてもキュートです。
+            </p>
+         </li>
+      </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright(C) with My HAMSTER ALL RIGHTS RESERVED.</p>
+    </footer>
+  </body>
+</html>
+

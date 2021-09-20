@@ -1,0 +1,120 @@
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 50px;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  display: flex;
+}
+
+.heading {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.navbar {
+  width: 50%;
+  padding: 20px;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* first-viewクラスからbottom-contentクラスまでの要素の親要素 */
+.contents {
+  background-color: white;
+}
+
+.first-view {
+  height: 60vh;
+}
+
+.top-image {
+  height: 180%;
+  width: 100%;
+}
+
+.upper-content {
+  height: 450px ;
+  margin: 0 160px;
+}
+
+.heading-name {
+  text-align: center;
+  width: 1000px;
+  margin: 40px auto; 
+  color: white;
+  font-size: 60px;
+}
+
+.heading-name-two {
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 400px;
+  margin: 40px auto;
+  font-size: 30px; 
+}
+
+.messages {
+  width: 50vw;
+  margin: 0 auto;
+}
+.message {
+  display: flex;
+  font-size: 18px;
+  margin: 0 auto;
+  color: white;
+}
+
+.middle-content {
+  height: 450px ;
+  margin: 0 160px;
+}
+
+.ham-charm-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0;
+}
+
+.ham-image {
+  height: 250px;
+}
+
+.ham-charm {
+  font-size: 15px;
+  text-align: center;
+}
+
+.bottom-content {
+  height: 450px ;
+  margin: 0 160px;
+}
+
+footer {
+  height: 50px;
+  background-color: #f0f0f0;
+  text-align: center;
+  color: gray;
+}
