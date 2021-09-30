@@ -58,4 +58,3 @@ class DiariesController < ApplicationController
     redirect_to root_path unless current_user == @diary.user
   end
 end
-end

@@ -1,0 +1,10 @@
+<div class="card">
+  <%= link_to image_tag(diary.image, class: :card__img ), diary_path(diary) %>
+  <div class="card__body">
+    <%= link_to diary.title, diary_path(diary), class: :card__title%>
+    <p class="card__summary">
+      <%= diary.text %>
+    </p>
+    <%= link_to "by #{diary.user.nickname}", diaries_path(diary.user), class: :card__user %>  
+ </div>
+</div>

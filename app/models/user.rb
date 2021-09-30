@@ -8,6 +8,6 @@ class User < ApplicationRecord
   validates :hamster_name, presence: true
   validates :profile, presence: true
        
-  has_many :diarys
+  has_many :diaries
   has_many :comments  
 end
