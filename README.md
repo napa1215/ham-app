@@ -12,7 +12,7 @@
 - has_many :diarys
 - has_many :comments
 
-## diarysテーブル
+## diariesテーブル
 | Column | Type       | Options           |
 | ------ | ---------- | ----------------- |
 | title  | string     | null: false       |
