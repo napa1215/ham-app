@@ -7,12 +7,12 @@
 
       <div class="field">
         <%= f.label :nickname, "ニックネーム" %><br />
-        <%= f.text_field :nickname %>
+        <%= f.text_field :nickname, id:"user_nickname" %>
       </div>
 
       <div class="field">
         <%= f.label :hamster_name, "ハムスターネーム" %><br />
-        <%= f.text_field :hamstaer_name %>
+        <%= f.text_field :hamster_name, id:"user_hamster_name" %>
       </div>
 
       <div class="field">
@@ -35,7 +35,7 @@
 
       <div class="field">
         <%= f.label :profile, "プロフィール" %><br />
-        <%= f.text_area :plofile %>
+        <%= f.text_area :profile, class: :form__text, id:"user_profile" %>
       </div>
 
       <div class="actions">
