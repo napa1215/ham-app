@@ -4,7 +4,7 @@ class DiariesController < ApplicationController
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
-    @diaries = Diary.all
+    @diaries = Diary.includes(:user)
   end
 
   def new

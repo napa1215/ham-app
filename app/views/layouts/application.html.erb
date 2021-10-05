@@ -8,35 +8,27 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <div class="header">
+    <header class="header">
+      <div class="inner">
         <div class="nav">
-          <h1 class="nav__left">
-            <%= link_to "with My HAMSTER -ハムスターと暮らそう-", root_path %>
-          </h1>
-          <div class="nav__right">
-            <%= link_to "投稿する", new_diary_path, class: :nav__btn %>
-            <%= link_to "マイページ", diary_path, class: :nav__btn %>
+          <div class="nav__left">
+            <h1><%= link_to "with My HAMSTER -ハムスター育成日記-", root_path %></h1>
           </div>
-
-          <%# ログインしているときは以下を表示するようにしましょう %>
           <% if user_signed_in? %>
             <div class="nav__right">
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
-              <%= link_to current_user.nickname, "#", class: "user-nickname" %>
+              <%= link_to "育成日記投稿", new_diary_path, class: :nav__btn %>
             </div>
-          <%# // ログインしているときは上記を表示するようにしましょう %>
-          <%# ログインしていないときは以下を表示するようにしましょう %>
           <% else %>
             <div class="nav__right">
               <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
               <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
             </div>
           <% end %>
-          <%# // ログインしていないときは上記を表示するようにしましょう %>
         </div>
       </div>
     </header>

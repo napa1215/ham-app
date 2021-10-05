@@ -1,16 +1,25 @@
-<div class="contents">
-  <div class="first-view">
-    <%= image_tag "IMG_0013.jpg", class: 'top-image' %>
+<main class="main">
+  <div class="inner">
+    <% if user_signed_in? %>
+      <div class="greeting">
+        Hello!,
+        <%= link_to "#{current_user.nickname}さん", user_path(current_user), class: :greeting__link%>
+      </div>
+    <% end %>
   </div>
-  <div class="upper-content">
+  <div class="contents">
+   <div class="first-view">
+    <%= image_tag "IMG_0013.jpg", class: 'top-image' %>
+   </div>
+   <div class="upper-content">
     <h1 class="heading-name">ハムスターと長く楽しく暮らそう</h1>
       <ul class="messages">
         <li class="message">
-          ハムスターは子どもから大人まで幅広い世代に、非常に人気のある動物です。ハムスターは知ってるけど、実際どうやって飼育すればいいのか？などインターネットで検索すれば、たくさんの情報がありますが、このアプリを通じて改めてハムスターについて知って欲しいことと、できるだけ多くのハムスターが、快適な環境で幸せに生活でき、飼い主さんとのきずなを深めるために使っていただけると嬉しいです。</div>
+          ハムスターは子どもから大人まで幅広い世代に、非常に人気のある動物です。ハムスターの１日は人間にとって１ヶ月にもなります。ハムスターの寿命はゴールデンで３年ドワーフで２年ほど。ハムスターと過ごす１日１日を大切に楽しく過ごすためにこの育成日記を使って、できるだけ多くのハムスターと飼い主さんとのきずなを深めるために使っていただけると嬉しいです。それではかわいいハムスターとの暮らしを始めましょう！</div>
         </li>
       </ul>
-  </div>
-  <div class="middle-content">
+   </div>
+   <div class="middle-content">
     <h1 class="heading-name">ハムスターのミリョク</h1>
       <ul class="ham-charm-list">
        <li>
@@ -41,8 +50,8 @@
            </p>
         </li>
       </ul>
-    </div>
-    <div class="middle-content">
+   </div>
+   <div class="middle-content">
       <ul class="ham-charm-list">
         <li>
           <%= image_tag 'IMG_0542.jpg', class: 'ham-image' %>
@@ -73,10 +82,9 @@
         </li>
       </ul>
     </div>
-    <div class="bottom-content">
-      <h1 class="heading-name">育成日記投稿一覧</h1>
-      <div class="card__wrapper">
+    <h1 class="heading-name">育成日記投稿一覧</h1>
+    <div class="card__wrapper">
         <%= render partial: 'diary', collection: @diaries %>
-      </div>
     </div>
-</div>
+  </div>
+</main>

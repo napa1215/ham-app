@@ -38,8 +38,9 @@ a {
 
 .header {
   background-color: beige;
+  margin-bottom: 48px;
   padding: 20px 0;
-  display: flex;
+
 }
 .inner {
   width: 1024px;
@@ -81,20 +82,6 @@ a {
   opacity: 0.5;
 }
 
-/* first-viewクラスからbottom-contentクラスまでの要素の親要素 */
-.contents {
-  background-color: white;
-}
-
-.first-view {
-  height: 80vh;
-}
-
-.top-image {
-  height: 105%;
-  width: 100%;
-}
-
 /* ハム情報 */
 .upper-content {
   height: 450px ;
@@ -116,6 +103,20 @@ a {
   display: flex;
   font-size: 25px;
   margin: 0 auto;
+}
+
+/* first-viewクラスからbottom-contentクラスまでの要素の親要素 */
+.contents {
+  background-color: white;
+}
+
+.first-view {
+  height: 80vh;
+}
+
+.top-image {
+  height: 105%;
+  width: 100%;
 }
 
 /* ハム紹介 */
@@ -255,7 +256,7 @@ a {
   flex-direction: column;
   margin-bottom: 8px;
 }
-.diary__title{
+.detail__title{
   font-size: 20px;
   font-weight: bold;
 }
@@ -278,7 +279,7 @@ a {
 }
 .diary__btn:hover{
   color: #fff;
-  background: #999;
+  background: beige;
 }
 
 .diary__comments{
@@ -298,7 +299,7 @@ a {
 
 .comment_user{
   font-size: 16px;
-  color: #999;
+  color: beige;
   text-decoration: underline;
 }
 
@@ -358,7 +359,7 @@ a {
     width: 48%;
     margin-bottom: 40px;
   }
-  .diary_image{
+  .prototype_image{
     width: 60%;
   }
 }
@@ -381,7 +382,7 @@ a {
   .card__summary {
     font-size: 14px;
   }
-  .diary_image{
+  .prototype_image{
     width: 100%;
   }
   .table{
